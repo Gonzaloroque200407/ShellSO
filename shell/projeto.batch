@@ -1,0 +1,6 @@
+path /home/aluno/lab/shell/comandos
+ls 
+cat hello.c > teste.c
+cat teste.c
+path
+exit
