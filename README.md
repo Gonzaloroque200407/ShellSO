@@ -22,16 +22,9 @@ git clone https://github.com/Gonzaloroque200407/ShellSO
 - Abra a sua VM
 - Navegue até o diretório do projeto
 ```
-cd snavegue/até/o/caminho/desejado
+cd navegue/até/o/caminho/desejado
 ```
 
-- Compilar o arquivo
-```
-gcc -c nome_do_arquivo.c
-```
-```
-gcc -o nome_do_arquivo nome_do_arquivo.o
-```
 - Executar o shell
 
 Para executar os comandos via arquivo .batch
