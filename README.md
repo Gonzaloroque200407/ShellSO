@@ -23,7 +23,7 @@ Baixe o repositório com download zip e extraia na pasta compartilhada da sua VM
 - Abra a sua VM
 - Navegue até o diretório do projeto
 ```
-cd nome_da_pasta_compartilhada/shell
+cd nome_da_pasta_compartilhada/ShellSO-main/shell
 ```
 
 - Executar o shell
