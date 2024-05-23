@@ -30,7 +30,7 @@ cd snavegue/até/o/caminho/desejado
 - Executar o shell
 ```
 ./projeto batch (para executar os comandos via arquivo .batch)
-ou
+```
 ./projeto texto (para executar os comandos via terminal texto)
 ```
 ## Recepção dos Comandos 
