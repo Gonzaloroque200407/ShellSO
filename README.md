@@ -77,7 +77,11 @@ Opções de comandos:
     ```
     cat <nome_do_arquivo>
     ```
-
+- clear: Limpa o terminal
+  - Exemplo:
+    ```
+    clear
+    ```
 - exit: Finaliza o shell
   - Exemplo:
     ```
