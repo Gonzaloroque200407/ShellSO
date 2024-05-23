@@ -97,11 +97,12 @@ int main(int argc,char *argv[]){
     }
     
   }
+  
 
   if(flag==0){
     printf("\033[1;31m'ls %s' não é reconhecido como um comando interno\n ou externo, um programa operável ou um arquivo em lotes.\033[0m\n", argv[1]);
   }
-  if(flag==2){
+  if(flag==2 || flag==1){
     printf("\n");
   }
 
