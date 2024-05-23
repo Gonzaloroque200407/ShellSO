@@ -16,9 +16,10 @@ Para instalar o projeto, siga os passos abaixo:
 ```
 cd navegue/até/o/caminho/desejado
 ```
-- Clone o repositório
+- Baixe o repositório
 ```
-git clone https://github.com/Gonzaloroque200407/ShellSO
+Baixe o repositório e coloque dentro da pasta da sua VM de forma que você
+ possa testá-lo
 ```
 - Abra a sua VM
 - Navegue até o diretório do projeto
