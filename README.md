@@ -31,7 +31,12 @@ gcc -o arquivo arquivo.o
 ```
 ./arquivo
 ```
+## Recepção dos Comandos 
 
+Ao executar o shell poderá selecionar duas maneiras:
+  - Interativamente, via terminal de texto
+  - Vindos de um arquivo batch
+    - editar o arquivo 'nome_do_arquivo.batch' com os comandos desejados.
 ## Comandos
 
 Opções de comandos:
