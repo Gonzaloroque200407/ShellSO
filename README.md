@@ -14,17 +14,16 @@ Trabalho final de projetos de sistemas operacionais - Fazer um SHELL
 Para instalar o projeto, siga os passos abaixo:
 
 
-# Clone o repositório
+Clone o repositório
 ```
 git clone https://github.com/seuusuario/seu-repositorio.git
-
 ```
-# Navegue até o diretório do projeto
+Navegue até o diretório do projeto
 ```
 cd seu-repositorio
 ```
 
-# Instale as dependências
+Instale as dependências
 
 ```
 npm install
