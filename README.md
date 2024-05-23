@@ -23,7 +23,7 @@ git clone https://github.com/Gonzaloroque200407/ShellSO
 - Abra a sua VM
 - Navegue até o diretório do projeto
 ```
-cd navegue/até/o/caminho/desejado
+cd nome_da_pasta_compartilhada/shell
 ```
 
 - Executar o shell
