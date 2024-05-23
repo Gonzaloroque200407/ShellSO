@@ -18,8 +18,7 @@ cd navegue/até/o/caminho/desejado
 ```
 - Baixe o repositório
 ```
-Baixe o repositório e coloque dentro da pasta da sua VM de forma que você
- possa testá-lo
+Baixe o repositório com download zip e extraia na pasta compartilhada da sua VM
 ```
 - Abra a sua VM
 - Navegue até o diretório do projeto
