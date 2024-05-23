@@ -27,14 +27,11 @@ cd snavegue/até/o/caminho/desejado
 
 - Compilar o arquivo
 ```
-gcc -c arquivo.c
-```
-```
-gcc -o arquivo arquivo.o
-```
 - Executar o shell
 ```
-./arquivo
+./projeto batch (para executar os comandos via arquivo .batch)
+ou
+./projeto texto (para executar os comandos via terminal texto)
 ```
 ## Recepção dos Comandos 
 
@@ -42,7 +39,7 @@ Ao executar o shell poderá selecionar duas maneiras:
   - Interativamente, via terminal de texto
     - Utilizar as opções de comandos existentes
   - Vindos de um arquivo batch
-    - editar o arquivo 'nome_do_arquivo.batch' com os comandos desejados.
+    - editar o arquivo 'projeto.batch' com os comandos desejados e também com a localização do arquivo projeto.c nos conformes da VM.
 ## Comandos
 
 Opções de comandos:
@@ -52,6 +49,8 @@ Opções de comandos:
     ```
     path <caminho>
     ```
+    path (apenas path imprime o path atual)
+    ```
 - cd: Muda o diretório de trabalho
   - Exemplo:
     ```
@@ -59,12 +58,16 @@ Opções de comandos:
     ```
     
     ```
-    cd ..
+    cd .. (retorna uma pasta)
+    ```
+    cd . (mantém o diretório atual)
     ```
 - ls: Lista o conteúdo do diretório atual
   - Parâmetros disponíveis:
     - -l
     - -a
+    - -la
+    - -al
   - Exemplo:
     ```
     ls
@@ -77,7 +80,7 @@ Opções de comandos:
     ```
     cat <nome_do_arquivo>
     ```
-- clear: Limpa o terminal
+- clear: Limpa o terminal (Necessita adicionar o caminho "/usr/bin" ao path)
   - Exemplo:
     ```
     clear
