@@ -1,4 +1,4 @@
-path /home/aluno/lab/shell/comandos
+path /home/nome_da_sua_VM/pasta_compartilhada/ShellSO-main/shell/comandos
 ls 
 cat hello.c > teste.c
 cat teste.c
