@@ -10,14 +10,19 @@ Trabalho final de projetos de sistemas operacionais
 
 Para instalar o projeto, siga os passos abaixo:
 
+- Abra o seu termninal
+- Navega para o diretório compartilhado com a VM
+```
+cd navegue/até/o/caminho/desejado
+```
 - Clone o repositório
 ```
-git clone https://github.com/seuusuario/seu-repositorio.git
+git clone https://github.com/Gonzaloroque200407/ShellSO
 ```
-
+- Abra a sua VM
 - Navegue até o diretório do projeto
 ```
-cd seu-repositorio
+cd snavegue/até/o/caminho/desejado
 ```
 
 - Compilar o arquivo
@@ -35,6 +40,7 @@ gcc -o arquivo arquivo.o
 
 Ao executar o shell poderá selecionar duas maneiras:
   - Interativamente, via terminal de texto
+    - Utilizar as opções de comandos existentes
   - Vindos de um arquivo batch
     - editar o arquivo 'nome_do_arquivo.batch' com os comandos desejados.
 ## Comandos
