@@ -4,6 +4,7 @@ Trabalho final de projetos de sistemas operacionais
 ## Sumário
 
 - [Instalação](#instalação)
+- [Recepção dos Comandos](#recepção-dos-comandos)
 - [Comandos](#comandos)
 - [Comando em Paralelo](#comandos-em-paralelo)
 ## Instalação
