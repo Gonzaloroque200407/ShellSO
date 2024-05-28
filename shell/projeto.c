@@ -53,6 +53,7 @@ char *getPath(char *arquivo, char **buffer) {
 
 void funcaocd(char comando[]) {
     char novoDir[200];
+
     if (strcmp(comando, ".") == 0) {
         return;
     } else if (strcmp(comando, "..") == 0) {
@@ -76,6 +77,7 @@ void executar_unico(char **parameters, int count2, char ***buffer_ptr) {
     char **buffer = *buffer_ptr;
     pid_t pid;
     int pos = -1;
+    int flag=0;
     char *arquivo = NULL;
 
     for (int j = 0; j < count2; j++) {
@@ -83,17 +85,27 @@ void executar_unico(char **parameters, int count2, char ***buffer_ptr) {
             pos = j;
             arquivo = parameters[j + 1];
             parameters[j] = NULL;
+            flag=1;
             break;
         }
     }
 
     if (strcmp(parameters[0], "cd") == 0) {
+        if(parameters[1]!=NULL){
         funcaocd(parameters[1]);
+        }
+        else{
+            printf("\033[1;31mcd : Insira um caminho válido\033[0m\n");
+        }
     } else if (strcmp(parameters[0], "path") == 0) {
         path(parameters, count2, buffer_ptr);
     } else if (strcmp(parameters[0], "exit") == 0) {
         exit(0);
     } else {
+        if(flag==1 && arquivo==NULL){
+             printf("\033[1;31mErro: informe o arquivo no qual deseja redirecionar\033[0m\n");
+        }
+        else{
         char *caminho = getPath(parameters[0], buffer);
         if (strcmp(caminho, "0") != 0) {
             pid = fork();
@@ -112,6 +124,8 @@ void executar_unico(char **parameters, int count2, char ***buffer_ptr) {
         } else {
             printf("\033[1;31m'%s' não é reconhecido como um comando interno\n ou externo, um programa operável ou um arquivo em lotes.\033[0m\n", parameters[0]);
         }
+        }
+        
     }
 }
 
@@ -179,7 +193,7 @@ int main(int argc, char *argv[]) {
     if (strcmp("batch", argv[1]) == 0) {
         FILE *batch_file;
         char *batch_line = NULL;
-        size_t tam=0;
+        size_t tam = 0;
         ssize_t read;
 
         batch_file = fopen("projeto.batch", "r");

@@ -5,6 +5,10 @@
 #include <string.h>
 
 int main(int argc,char *argv[]){
+    if(argv[1]==NULL){
+        printf("\033[1;31mUso correto: cat <arquivo>\033[0m\n");
+        return 0;
+    }
     char filepath[256];
     getcwd(filepath,sizeof(filepath));
     strcat(filepath, "/");
